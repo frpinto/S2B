@@ -1,0 +1,16 @@
+Package: S2B
+Title: Specific Specific Betweenness
+Version: 0.0.0.9000
+Authors@R: c(
+  person("Francisco", "Pinto", email = "frpinto@fc.ul.pt", role = c("aut", "cre")),
+  person("Marina", "Garcia-Vaquero", email = "mlgarciavaquero@fc.ul.pt", role = c("aut")))
+Description: Computes for every node in the network its specific betweenness, that is, how 
+  many times it is part of a shortest path linking nodes from two sets of seeds. By network 
+  randomization it evaluates if the observed specific betweenness is not easily explained by
+  chance.
+Depends: R (>= 3.4.1)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
+Imports: igraph

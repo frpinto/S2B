@@ -3,7 +3,9 @@ Title: Specific Specific Betweenness
 Version: 0.0.0.9000
 Authors@R: c(
   person("Francisco", "Pinto", email = "frpinto@fc.ul.pt", role = c("aut", "cre")),
-  person("Marina", "Garcia-Vaquero", email = "mlgarciavaquero@fc.ul.pt", role = c("aut")))
+  person("Marina", "Garcia-Vaquero", email = "mlgarciavaquero@fc.ul.pt", role = c("aut")),
+  person("Javier", "De Las Rivas", email = "jrivas@usal.es", role = c("aut")),
+  person("Margarida", "Gama-Carvalho", email = "mhcarvalho@fc.ul.pt", role = c("aut")))
 Description: Computes for every node in the network its specific betweenness, that is, how 
   many times it is part of a shortest path linking nodes from two sets of seeds. By network 
   randomization it evaluates if the observed specific betweenness is not easily explained by

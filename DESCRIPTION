@@ -8,7 +8,9 @@ Description: Computes for every node in the network its specific betweenness, th
   many times it is part of a shortest path linking nodes from two sets of seeds. By network 
   randomization it evaluates if the observed specific betweenness is not easily explained by
   chance.
-Depends: R (>= 3.4.1)
+URL: http://github.com/frpinto/S2B
+BugReports: http://github.com/frpinto/S2B/issues  
+Depends: R
 License: GPL-2
 Encoding: UTF-8
 LazyData: true

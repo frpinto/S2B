@@ -10,6 +10,7 @@
 #' @return seedmat1 - matrix with one row for each node in the network and a column for each seed in index1. If the matrix element (i,j) is 1, then index1[j] was connected to the other seed set through a shortest path going through node i, and shorter than meandist
 #' @return seedmat2 - matrix similar to seedmat1 but reffering to index 2 seeds
 #' @return maxS2B - theoretical maximum of absolute S2B scores for this network and seed sets
+#' @export
 
 S2B=function(seed_graph,index1,index2,nrep,nrep2){
   meandist=igraph::mean_distance(seed_graph)

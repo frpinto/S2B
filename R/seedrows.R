@@ -4,6 +4,7 @@
 #' @param seed_graph igraph object of the network to be searched.
 #' @param seedvec vector with strings of node identifiers.
 #' @return rowindex vector of integers with the found node ids
+#' @export
 
 seedrows=function(seed_graph,seedvec){
   vertexlist=igraph::vertex_attr(seed_graph)

@@ -3,6 +3,8 @@
 #' This function allows you to remove multiple edges, self-loops and keeps only main component.
 #' @param seed_graph igraph object of the network to be simplified.
 #' @return seed_graph_maincomp is an igraph object with the simplified main component of the input graph.
+#' @export
+
 
 simpmain=function(seed_graph){
   seed_graph_simp=igraph::simplify(seed_graph)

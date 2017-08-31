@@ -6,6 +6,8 @@
 #' @param A_index vector with seed ids
 #' @param B_index vector with seed ids
 #' @return data frame with S2B results and node annotation
+#' @export
+
 makes2btable=function(complete_results,apid_main,A_index,B_index){
 
   multi_neib2=multineibstat2(apid_main,A_index,B_index,1)

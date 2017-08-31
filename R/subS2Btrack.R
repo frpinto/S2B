@@ -10,6 +10,7 @@
 #' @return smat2 - matrix similar to smat1 but reffering to index 2 seeds
 #' @return maxS2B - theoretical maximum of absolute S2B scores for this network and seed sets
 #' @return trackpath - list composed of two vectors with the ids of the shortest path extremes and a list with the shortest path members
+#' @export
 
 subS2Btrack=function(seed_graph,index1,index2,meandist){
   nnodes=igraph::gorder(seed_graph)

@@ -6,6 +6,8 @@
 #' @param B_index vector with seed ids
 #' @param nrep number of network randomizations (shufle egdes maintaining degree) used to compute specificity score
 #' @return data frame with number of direct neighbors in both seed lists, the related number of crossbridges and its specificity score
+#' @export
+
 multineibstat2=function(g,A_index,B_index,nrep){
 
   pn1=A_index

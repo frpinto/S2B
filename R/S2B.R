@@ -46,5 +46,5 @@ S2B=function(seed_graph,index1,index2,nrep,nrep2){
   bigvertexlist=igraph::vertex_attr(seed_graph)
   allstat=data.frame(protein=bigvertexlist[[1]],bcount=bt$allcount,score=pbt, nscore=nscore) ####
   s2btable=makes2btable(allstat,seed_graph,index1,index2)
-  list(s2btable=allstat,seedmat1=bt$smat1,seedmat2=bt$smat2,maxS2B=bt$maxS2B)
+  list(s2btable=s2btable,seedmat1=bt$smat1,seedmat2=bt$smat2,maxS2B=bt$maxS2B)
 }

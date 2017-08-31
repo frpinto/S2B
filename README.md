@@ -15,7 +15,7 @@ devtools::install_github("frpinto/S2B")
 ## Example
 
 An S2B analysis needs as inputs 1) a biological interaction network and 2) two sets of seed proteins/genes. The package includes the necessary input variables to test S2B use:
-* a3h2_graph.RData - contains a human protein-protein physical interaction network derived from [APID](apid.dep.usal.es/) and from [HuRI](http://interactome.baderlab.org/). This variable is an igraph object. Nodes names are UniProt identifiers.
+* a3h2_graph.RData - contains a human protein-protein physical interaction network derived from [APID](apid.dep.usal.es/) and from [HuRI](http://interactome.baderlab.org/). This variable is an igraph object. Node names are UniProt identifiers.
 * ALS_vec.RData - a vector of UniProt identifiers of proteins previously associated with Amyotrophic Lateral Sclerosis (ALS)
 * SMA_vec.RData - a vector of UniProt identifiers of proteins previously associated with Spinal Muscular Atrophy (SMA)
 

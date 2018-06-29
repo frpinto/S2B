@@ -7,16 +7,6 @@
 #' @export
 
 seedrows=function(seed_graph,seedvec){
-  vertexlist=igraph::vertex_attr(seed_graph)
-  seedrows=rep(0,length(seedvec))
-
-  for (i in 1:length(seedvec)){
-    if (any(vertexlist[[1]]==seedvec[i])){
-      seedrows[i]=which(vertexlist[[1]]==seedvec[i], arr.ind=TRUE)
-    }
-  }
-
-  rowindex=seedrows[seedrows>0]
-  rowindex=rowindex[order(rowindex)]
-  rowindex
+  vertexlist=unlist(igraph::vertex_attr(seed_graph))
+  rowindex=which(is.element(vertexlist,seedvec))
 }

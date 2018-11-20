@@ -15,8 +15,8 @@
 S2B=function(seed_graph,index1,index2,nrep,nrep2){
   meandist=igraph::mean_distance(seed_graph)
   bt=subS2B(seed_graph,index1,index2,meandist)
-  pbt=rep(0,gorder(seed_graph))
-  nscore=rep(0,gorder(seed_graph))
+  pbt=rep(0,igraph::gorder(seed_graph))
+  nscore=rep(0,igraph::gorder(seed_graph))
   deglist=igraph::degree(seed_graph)
   if (nrep2>0){
     rbt_matrix2=matrix(nrow=length(bt$allcount),ncol=nrep2)

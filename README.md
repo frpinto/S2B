@@ -28,8 +28,8 @@ a3h2_main = simpmain(a3h2_graph)
 The function seedrows is necessary to check if the members of the seed sets are part of the network and finding their indexes in the nodes list:
 
 ``` r
-als_index = seedrows(ALS_vec)
-sma_index = seedrows(SMA_vec)
+als_index = seedrows(a3h2_main, ALS_vec)
+sma_index = seedrows(a3h2_main, SMA_vec)
 ```
 
 Finally, the S2B function can be applied:
